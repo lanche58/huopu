@@ -1,0 +1,228 @@
+.btn-more{
+    width: 120px;
+    height: 40px;
+    background: $red;
+    border-radius: 20px;
+    line-height: 40px;
+    color: $white;
+    text-align: center;
+    @include mt3;
+}
+
+.slick-arrow{
+    font-family: "iconfont" !important;
+}
+
+.slick-prev{
+    &:before{
+        content: "\e7d8";
+    }
+}
+
+.slick-next{
+    &:before{
+        content: "\e630";
+    }
+}
+
+.ab-ti{
+    .ch{
+        font-size: 30px;
+        font-weight: bold;
+        color: $fc1;
+    }
+    .en{
+        margin-top: 7px;
+        font-size: 20px;
+        color: $fc3;
+    }
+}
+
+.nw-date{
+    position: relative;
+    width: 68px;
+    height: 68px;
+    padding-top: 15px - 3px;
+    background: $red;
+    color: $white;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    .y{
+        @include plr;
+        bottom: 8px;
+    }
+    .d{
+        font-size: 30px;
+        i{
+            display: none;
+        }
+    }
+}
+
+.btn-more-1{
+    font-size: 12px;
+    color: $fc3;
+    line-height: 20px;
+    @include mt3;
+    .line{
+        display: inline-block;
+        vertical-align: top;
+        margin: 9px 8px 0 0;
+        width: 30px;
+        height: 1px;
+        background: $hc3;
+        @include mt3;
+    }
+}
+
+.nw-date2{
+    line-height: 20px;
+    font-size: 12px;
+    color: $fc3;
+    .icon{
+        @include di;
+        margin-right: 4px;
+        font-size: 12px;
+    }
+}
+
+.btn-load-more{
+    width: 210px;
+    height: 54px;
+    border-radius: 30px;
+    border: 1px solid $bc1;
+    color: $fc3;
+    text-align: center;
+    line-height: 54px - 2px;
+    @include mt3;
+}
+
+.share{
+    line-height: 20px;
+    color: $fc3;
+    font-size: 12px;
+    p{
+        float: left;
+    }
+    a{
+        height: auto !important;
+        background: none !important;
+        line-height: 20px !important;
+        color: $fc3 !important;
+        opacity: 1 !important;
+        + a{
+            margin-left: 8px !important;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $red !important;
+            }
+        }
+    }
+}
+
+.btn-more-2, .btn-more-3{
+    background: $hc1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: $white;
+    @include mt3;
+}
+
+.btn-more-2{
+    @include c(50px);
+    line-height: 50px;
+}
+
+.btn-more-3{
+    @include c(40px);
+    line-height: 40px;
+}
+
+.btn-more-hover{
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-more{
+                background: $hc1;
+            }
+            .btn-more-1{
+                color: $red;
+                .line{
+                    width: 40px;
+                    background: $red;
+                }
+            }
+            .btn-load-more{
+                background: $red;
+                border-color: $red;
+                color: $white;
+            }
+            .btn-more-3, .btn-more-2{
+                background: $red;
+            }
+        }
+    }
+}
+
+.btn-close{
+    width: 80px;
+    height: 80px;
+    padding-top: 20px;
+    background: $red;
+    color: $white;
+    line-height: 1;
+    text-align: center;
+    .icon{
+        display: block;
+        margin-bottom: 2px;
+        font-size: 24px;
+        @include mt4;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .icon{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.btn-sub{
+    width: 200px;
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 30px;
+    background: $red;
+    line-height: 50px;
+    text-align: left;
+    color: $white;
+    overflow: hidden;
+    @include mt3;
+    .icon{
+        float: right;
+        font-size: 14px;
+        @include mt3;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: $red-f2;
+            .icon{
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+
+.inp{
+    line-height: 24px;
+    padding: 5px 0;
+    border-bottom: 1px solid $hc1;
+    border-top: 1px solid $white;
+    height: 36px;
+    @include mt3;
+    &:focus{
+        border-bottom-color: $red;
+    }
+}
