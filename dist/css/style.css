@@ -770,3 +770,6 @@ a.pswp__share--download:hover{background:#ddd}
 }
 .inp{line-height:24px;padding:5px 0;border-bottom:1px solid #ccc;border-top:1px solid #fff;height:36px;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
 .inp:focus{border-bottom-color:#e62129}
+.header{height:80px}
+.header .logo{float:left;width:148px;margin:0}
+.mtop{height:80px}
