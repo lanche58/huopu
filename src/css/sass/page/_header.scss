@@ -1,12 +1,227 @@
 .header{
     height: 80px;
+    line-height: 24px;
+    font-size: 16px;
+    a{
+        color: $fc1;
+    }
     .logo{
         float: left;
         width: 148px;
-        margin: 0 0 0 0;
+        margin: 16px 0 0 40px;
+    }
+    .nav{
+        float: left;
+    }
+    .oa{
+        float: left;
+        margin-left: 12px + 24px;
+        height: 80px;
+        padding: (80px - 24px) / 2 32px 0;
+        border-left: 1px solid $bc1;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $red;
+                color: $white;
+            }
+        }
+    }
+    .pull-nav-bg{
+        @include plr;
+        top: 100%;
+        z-index: -1;
+        border-top: 1px solid $red;
+        height: 200px;
+        background: $white;
+        background: $white-9;
+        display: none;
+    }
+    @media screen and (max-width:1201px) {
+        font-size: 15px;
+        .oa{
+            margin-left: 10px + 19px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        height: 60px;
+        .oa{
+            display: none;
+        }
+        .logo{
+            margin: (60px - 48px) / 2 0 0 5%;
+        }
+    }
+}
+
+.menu-handler{
+    background: $red;
+    .burger{
+        background: $white;
+        border-radius: 5px;
+    }
+    @media screen and (max-width:1024px) {
+        display: block;
+    }
+}
+
+.nav{
+    a{
+        display: block;
+    }
+    li{
+        float: left;
+        position: relative;
+        > a{
+            padding: (80px - 24px) / 2 0;
+        }
+        + li{
+            padding: 0 24px;
+            > a{
+                position: relative;
+                padding-left: 12px;
+                padding-right: 12px;
+                &:before{
+                    @include hl($red, 10px);
+                }
+                &.act{
+                    &:before{
+                        @include hlw;
+                    }
+                }
+                @media screen and (min-width:1025px) {
+                    &:hover{
+                        &:before{
+                            @include hlw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home{
+        > a{
+            color: $red;
+            padding-left: 12px + 24px;
+            padding-right: 12px + 24px;
+            &.act{
+                background: $red;
+                color: $white;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $red;
+                    color: $white;
+                }
+            }
+        }
+        .icon{
+            @include di;
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:1201px) {
+        li{
+            + li{
+                padding: 0 19px;
+                > a{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .home{
+            > a{
+                padding-left: 19px + 10px;
+                padding-right: 19px + 10px;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        display: none;
+    }
+}
+
+.pull-nav{
+    display: none;
+    @include plr;
+    top: 100%;
+    padding: 20px 0 0 12px + 24px;
+    font-size: 12px;
+    a{
+        color: $fc2;
+        padding: (30px - 24px) / 2 0;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    @media screen and (max-width:1201px) {
+        padding-left: 10px + 19px;
     }
 }
 
 .mtop{
     height: 80px;
+    @media screen and (max-width:1024px) {
+        height: 60px;
+    }
+}
+
+.menuBox{
+    display: none;
+    width: 215px;
+    right: -215px;
+    background: $red;
+    a{
+        color: $white;
+    }
+    .navMobile{
+        padding-top: 60px;
+    }
+}
+
+.navMobile{
+    padding: 0 25px;
+    a{
+        display: block;
+        line-height: 1.4;
+    }
+    dd{
+        > a{
+            padding: 12px 0;
+            font-size: 18px;
+            &.act{
+                padding-left: 10px;
+                font-weight: bold;
+            }
+        }
+        &:last-child{
+            border-top: 1px solid $white-3;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+    }
+    .mtv{
+        display: none;
+        padding: 5px 0 5px 20px;
+        > a{
+            padding: 6px 0;
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        dd{
+            > a{
+                font-size: 16px;
+            }
+        }
+        .mtv{
+            > a{
+                font-size: 14px;
+            }
+        }
+    }
 }

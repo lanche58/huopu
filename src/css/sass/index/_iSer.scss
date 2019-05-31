@@ -1,0 +1,114 @@
+.ix-ser-list{
+    margin-left: -15px;
+    li{
+        width: 25%;
+        float: left;
+        &:nth-child(2){
+            a{
+                background: $mc3;
+            }
+        }
+        &:nth-child(3){
+            a{
+                background: $mc4;
+            }
+        }
+        &:nth-child(4){
+            a{
+                background: $mc5;
+            }
+        }
+    }
+    a{
+        display: block;
+        position: relative;
+        height: 120px;
+        padding: (120px - 42px) / 2 35px 0;
+        background: $mc2;
+        margin-left: 15px;
+        border-radius: 6px;
+        color: $white;
+        overflow: hidden;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                transform: translateY(-10px);
+                .icon1{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    .iconfont{
+        line-height: 1;
+        @include mt3;
+    }
+    .icon1{
+        float: left;
+        margin-right: 20px;
+        font-size: 42px;
+    }
+    .en{
+        margin-bottom: 2px;
+        font-size: 12px;
+        color: $white-5;
+    }
+    .ch{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .wrap{
+        overflow: hidden;
+        padding-right: 20px;
+    }
+    .icon2{
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        right: 30px;
+        font-size: 20px;
+    }
+    @media screen and (max-width:1366px) {
+        a{
+            height: 80px;
+            padding: (80px - 42px) / 2 25px 0;
+        }
+        .icon1{
+            margin-right: 15px;
+        }
+        .icon2{
+            right: 20px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        li{
+            width: 33.33%;
+            margin-bottom: 15px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        a{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .icon2{
+            right: 10px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+        }
+        a{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .icon2{
+            right: 5%;
+        }
+    }
+}

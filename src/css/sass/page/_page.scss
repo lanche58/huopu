@@ -1,0 +1,19 @@
+.page-pa{
+    padding: 80px 0 100px;
+    @media screen and (max-width:1024px) {
+        padding-top: 0;
+        .pnav{
+            margin-bottom: 80px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-bottom: (100 / 600) * 100vw;
+        .pnav{
+            margin-bottom: (80 / 600) * 100vw;
+        }
+    }
+}
+
+.page-bg{
+    background: $hc3;
+}

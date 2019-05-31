@@ -1,0 +1,37 @@
+.pbanner{
+    .txts{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10%;
+        right: 10%;
+        color: $white;
+    }
+    .ch{
+        font-weight: bold;
+        font-size: 46px;
+    }
+    .en{
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    @media screen and (max-width:1366px) {
+        .ch{
+            font-size: 36px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .pic2{
+            height: 200px;
+            img{
+                @include ofc;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ch{
+            font-size: 28px;
+        }
+    }
+}

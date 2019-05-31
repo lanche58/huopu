@@ -1,0 +1,98 @@
+.banner{
+    .txts{
+        @include plr;
+        top: 29%;
+        color: $white;
+    }
+    .ch{
+        font-size: 46px;
+        font-weight: bold;
+        line-height: 1.3;
+    }
+    .more{
+        margin-top: 35px;
+    }
+    .pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:after{
+            @include ba;
+            @include tblr;
+            @include b5;
+            background: $black-1;
+        }
+    }
+    .slick-arrow{
+        width: auto;
+        background: none;
+        font-size: 28px;
+        color: $white;
+        line-height: 40px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    .slick-prev{
+        left: 3.5%;
+    }
+    .slick-next{
+        right: 3.5%;
+    }
+    .slick-dots{
+        display: none !important; 
+    }
+    @media screen and (max-width:1366px) {
+        .ch{
+            font-size: 36px;
+        }
+        .more{
+            margin-top: 30px;
+        }
+        .txts{
+            top: 25%;
+        }
+        .slick-prev{
+            left: 2.5%;
+        }
+        .slick-next{
+            right: 2.5%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .slick-arrow{
+            display: none !important;
+        }
+        .slick-dots{
+            display: block !important;
+        }
+        .txts{
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    @media screen and (max-width:641px) {
+        .ch{
+            font-size: 28px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .more{
+            margin-top: 5vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ch{
+            font-size: 22px;
+        }
+        .btn-more{
+            width: 96px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+        }
+    }
+}
+

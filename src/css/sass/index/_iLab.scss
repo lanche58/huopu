@@ -1,0 +1,84 @@
+.ix-lab{
+    position: relative;
+    .ix-ti{
+        position: absolute;
+        right: 0;
+        left: 30px;
+        top: 0;
+        z-index: 100;
+        padding: 30px 40px 0;
+        .ti, .icon{
+            color: $white;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .ix-ti{
+            left: 20px;
+            padding: 22px 30px 0;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .ix-ti{
+            left: 0;
+            padding: 30px 5% 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ix-ti{
+            padding-top: 20px;
+        }
+    }
+}
+
+.il-list{
+    .pai{
+        display: block;
+        padding-bottom: (370 / 685) * 100%;
+        &:after{
+            @include ba;
+            @include tblr;
+            @include b5;
+            background: $black-1;
+        }
+    }
+    .slick-dots{
+        padding: 0 40px;
+        text-align: left;
+        bottom: 25px;
+        li{
+            margin: 0 10px 0 0;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .slick-dots{
+            padding: 0 30px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .slick-dots{
+            padding: 0 5%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .slick-dots{
+            bottom: 15px;
+        }
+    }
+}
+
+.slick-dots{
+    li{
+        width: 8px;
+        height: 8px;
+        border: 1px solid $white;
+        background: none;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $white;
+            }
+        }
+    }
+    .slick-active{
+        background: $white;
+    }
+}
