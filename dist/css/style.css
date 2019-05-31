@@ -1118,3 +1118,22 @@ a.pswp__share--download:hover{background:#ddd}
 .slick-dots li:hover{background:#fff}
 }
 .slick-dots .slick-active{background:#fff}
+.sos-box{position:fixed;top:0;bottom:0;left:0;right:0;background-position:center center;background-repeat:no-repeat;background-size:cover}
+.sos-cont{position:absolute;top:50%;left:10%;right:10%;margin-top:-155px;text-align:center;color:#fff}
+.sos-cont img{vertical-align:bottom;max-width:90%}
+.sos-cont .tx1{margin-top:45px;line-height:1.4;font-size:30px}
+.sos-cont .ib{width:72px;height:26px;border:1px solid #fff;line-height:24px;color:#fff;font-size:12px}
+@media screen and (min-width:1025px){
+.sos-cont .ib:hover{background:#e62129;border-color:#e62129;color:#fff}
+}
+.sos-cont .index{margin-left:15px;background:#fff;color:#999}
+.sos-cont .fib{margin-top:20px}
+@media screen and (max-width:1024px){
+.sos-cont{margin-top:0;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+}
+@media screen and (max-width:601px){
+.sos-cont .tx1{margin-top:7.5vw}
+}
+@media screen and (max-width:481px){
+.sos-cont .tx1{font-size:24px}
+}

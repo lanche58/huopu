@@ -1,0 +1,61 @@
+.sos-box{
+    position: fixed;
+    @include tblr;
+    @include bg;
+}
+
+.sos-cont{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    margin-top: -(310px / 2);
+    text-align: center;
+    color: $white;
+    img{
+        vertical-align: bottom;
+        max-width: 90%;
+    }
+    .tx1{
+        margin-top: 45px;
+        line-height: 1.4;
+        font-size: 30px;
+    }
+    .ib{
+        width: 72px;
+        height: 26px;
+        border: 1px solid $white;
+        line-height: 24px;
+        color: $white;
+        font-size: 12px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $red;
+                border-color: $red;
+                color: $white;
+            }
+        }
+    }
+    .index{
+        margin-left: 15px;
+        background: $white;
+        color: $fc3;
+    }
+    .fib{
+        margin-top: 20px;
+    }
+    @media screen and (max-width:1024px) {
+        margin-top: 0;
+        transform: translateY(-50%);
+    }
+    @media screen and (max-width:601px) {
+        .tx1{
+            margin-top: 7.5vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .tx1{
+            font-size: 24px;
+        }
+    }
+}
