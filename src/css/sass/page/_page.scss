@@ -3,17 +3,28 @@
     @media screen and (max-width:1024px) {
         padding-top: 0;
         .pnav{
-            margin-bottom: 80px;
+            margin-bottom: 0;
         }
     }
     @media screen and (max-width:601px) {
         padding-bottom: (100 / 600) * 100vw;
-        .pnav{
-            margin-bottom: (80 / 600) * 100vw;
-        }
     }
 }
 
 .page-bg{
     background: $hc3;
+}
+
+.pw2{
+    width: 1000px;
+    margin: 0 auto;
+    @media screen and (max-width:1024px) {
+        width: 90%;
+    }
+}
+
+.pw3{
+    width: 900px;
+    margin: 0 auto;
+    max-width: 90%;
 }

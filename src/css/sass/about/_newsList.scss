@@ -1,0 +1,77 @@
+.news-list{
+    margin-left: -25px;
+    li{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 25px;
+    }
+    a{
+        display: block;
+        margin-left: 25px;
+        border: 1px solid $bc1;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                box-shadow: 0 3px 5px rgba(0,0,0,.16);
+                .nowti{
+                    color: $red;
+                }
+            }
+        }
+    }
+    .pai{
+        padding-bottom: (280 / 450) * 100%;
+    }
+    .txts{
+        height: 200px;
+        padding: 30px 35px 0;
+        overflow: hidden;
+    }
+    .nowti{
+        font-size: 20px;
+        font-weight: bold;
+        color: $fc1;
+        @include mt3;
+    }
+    .tx{
+        line-height: 20px !important;
+        height: 20px * 2;
+        margin-top: 3px;
+    }
+    .more{
+        line-height: 1;
+        margin-top: 25px;
+    }
+    .nw-date2{
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width:1600px) {
+        .txts{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .txts{
+            padding: 20px 25px 0;
+            height: 200px - 20px;
+        }
+        .more{
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        li{
+            width: 100%;
+            margin-bottom: (25 / 600) * 100vw;
+        }
+        .txts{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+}

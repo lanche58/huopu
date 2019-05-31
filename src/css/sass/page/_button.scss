@@ -36,6 +36,26 @@
         font-size: 20px;
         color: $fc3;
     }
+    @media screen and (max-width:641px) {
+        .ch{
+            font-size: 24px;
+        }
+        .en{
+            margin-top: 5px;
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-left: 5%;
+        padding-right: 5%;
+        .ch{
+            font-size: 20px;
+        }
+        .en{
+            margin-top: 3px;
+            font-size: 12px;
+        }
+    }
 }
 
 .nw-date{

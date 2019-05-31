@@ -5,6 +5,11 @@
     line-height: 24px;
     a{
         color: $fc3;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $red;
+            }
+        }
     }
     .f-ma{
         float: right;

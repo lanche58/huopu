@@ -1,0 +1,160 @@
+.spe-news-list{
+    border: 1px solid $bc1;
+    .item{
+        > a{
+            display: block;
+        }
+    }
+    .picbox{
+        width: 50%;
+        float: left;
+    }
+    .pai{
+        padding-bottom: (432 / 700) * 100%;
+    }
+    .wrap{
+        overflow: hidden;
+        padding: 0 70px;
+    }
+    .ti{
+        height: 35px * 2;
+        font-size: 26px;
+        font-weight: bold;
+        color: $fc1;
+        line-height: 35px;
+        overflow: hidden;
+    }
+    .tx{
+        border-top: 1px solid $bc1;
+        padding-top: 20px;
+        margin-top: 16px;
+        height: 20px * 3;
+        line-height: 20px !important;
+        box-sizing: content-box;
+    }
+    .more{
+        margin-top: 45px;
+        line-height: 1;
+    }
+    .nw-date{
+        margin-bottom: 45px;
+    }
+    .slick-dots{
+        width: 50%;
+        left: auto;
+        bottom: 30px;
+        padding: 0 70px;
+        text-align: left;
+        li{
+            border-color: $red;
+            margin: 0 10px 0 0;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background-color: $red;
+                }
+            }
+        }
+        .slick-active{
+            background-color: $red;
+        }
+    }
+    @media screen and (max-width:1600px) {
+        .slick-dots, .wrap{
+            padding: 0 50px;
+        }
+        .nw-date{
+            margin-bottom: 35px;
+        }
+        .ti{
+            height: 30px * 2;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .tx{
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        .more{
+            margin-top: 35px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .slick-dots, .wrap{
+            padding: 0 40px;
+        }
+        .ti{
+            height: auto;
+            line-height: 1.4;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .nw-date{
+            margin-bottom: 25px;
+        }
+        .tx{
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        .slick-dots{
+            bottom: 20px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .nw-date{
+            width: auto;
+            height: auto;
+            padding: 0;
+            background: none;
+            margin-bottom: 5px;
+            color: $fc3;
+            font-weight: normal;
+            text-align: left;
+            font-size: 12px;
+            .d{
+                font-size: 12px;
+                i{
+                    display: inline;
+                }
+            }
+            .y{
+                position: static;
+            }
+        }
+        .wrap{
+            padding: 25px 30px 0;
+        }
+        .slick-dots{
+            padding: 0 30px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .picbox{
+            display: none;
+        }
+        .wrap{
+            padding: 30px 5% 60px;
+        }
+        .slick-dots{
+            width: 100%;
+            bottom: 30px;
+            padding: 0 5%;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .picbox{
+            display: block;
+            width: 100%;
+            float: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .wrap{
+            padding-top: 5vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti{
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.ab-ser-list{
+    a{
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .icon1{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    .icon1{
+        display: block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: $mc2;
+        line-height: 90px;
+        color: $white;
+        font-size: 42px;
+        @include mt4;
+    }
+    .ch{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .en{
+        font-size: 12px;
+        color: $fc3;
+    }
+    li{
+        margin: 0 60px;
+        &:nth-child(2){
+            .icon1{
+                background: $mc3;
+            }
+        }
+        &:nth-child(3){
+            .icon1{
+                background: $mc4;
+            }
+        }
+        &:nth-child(4){
+            .icon1{
+                background: $mc5;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        li{
+            width: 25%;
+            margin: 0;
+        }
+        .icon1{
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .ch{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .icon1{
+            width: 72px;
+            height: 72px;
+            font-size: 34px;
+            line-height: 72px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 50%;
+            margin-bottom: 5vw;
+        }
+    }
+}

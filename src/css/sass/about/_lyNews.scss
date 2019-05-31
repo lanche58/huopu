@@ -1,0 +1,116 @@
+.ly-news{
+    .ly-cont{
+        top: 0;
+        right: 0;
+        width: 83.33%;
+        height: 100%;
+        @include sy;
+    }
+    .close-box{
+        position: fixed;
+        z-index: 99;
+        right: 83.33%;
+        top: 50%;
+        margin: -40px -40px 0 0;
+    }
+    @media screen and (max-width:1024px) {
+        .ly-cont{
+            width: 100%;
+        }
+        .close-box{
+            top: auto;
+            margin: 0;
+        }
+    }
+}
+
+.ly-box{
+    @media screen and (max-width:1024px) {
+        .close-box{
+            bottom: 15px;
+            right: 15px;
+        }
+        .btn-close{
+            padding-top: 0;
+            width: 40px;
+            height: 40px;
+            background: $red-8;
+            line-height: 40px;
+            .x{
+                display: none;
+            }
+            .icon{
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.nd1{
+    padding: (180 / 1600) * 100% 0 120px;
+    .ti{
+        margin-bottom: 55px;
+        font-size: 30px;
+        font-weight: bold;
+        color: $fc1;
+    }
+    .nw-mess{
+        margin-bottom: 45px;
+    }
+    .nw-back{
+        margin-top: 70px;
+    }
+    @media screen and (max-width:1024px) {
+        padding-top: 100px;
+    }
+    @media screen and (max-width:641px) {
+        .ti{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (100 / 600) * 100vw 0 (120 / 600) * 100vw;
+        .ti{
+            margin-bottom: (55 / 600) * 100vw;
+        }
+        .nw-mess{
+            margin-bottom: 7.5vw;
+        }
+        .nw-back{
+            margin-top: (70 / 600) * 100vw;
+        }
+    }
+}
+
+.nw-mess{
+    border-bottom: 1px solid $bc1;
+    padding-bottom: 10px;
+    .nw-date2{
+        float: left;
+    }
+    .name{
+        float: left;
+        margin-left: 15px;
+        font-size: 12px;
+        color: $red;
+        line-height: 20px;
+    }
+    .share{
+        float: right;
+    }
+}
+
+.nw-back{
+    border-top: 1px solid $bc1; 
+    padding-top: 4px;
+    a{
+        display: block;
+        margin-top: 12px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+}

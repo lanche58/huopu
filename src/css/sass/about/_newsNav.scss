@@ -1,0 +1,37 @@
+.news-nav{
+    line-height: 24px;
+    a{
+        display: block;
+        padding: 8px 0;
+        position: relative;
+        font-size: 18px;
+        &:before{
+            @include hl($red,5px);
+        }
+        &.act{
+            color: $red;
+            &:before{
+                @include hlw;
+            }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    li{
+        padding: 0 24px;
+    }
+    @media screen and (max-width:601px) {
+        li{
+            padding: 0 (24 / 600) * 100vw;
+        }
+        a{
+            font-size: 16px;
+            &:before{
+                height: 4px;
+            }
+        }
+    }
+}
