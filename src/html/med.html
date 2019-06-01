@@ -1,0 +1,113 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "med": "act"
+})
+@@include('./pbanner.html',{
+    "img": "mei_banner.jpg",
+    "ch": "医学检验",
+    "en": "MEIDCAL LABORATORY"
+})
+<div class="container">
+    <div class="page-pa med-pa">
+        <div class="pnav">
+            <ul class="fib">
+                <li class="ib"><a href="med.html" class="act">常规检验</a></li>
+                <li class="ib"><a href="med1.html">特色检验</a></li>
+            </ul>
+        </div>
+        <!-- pnav -->
+        <div class="med1">
+            <div class="pw5">
+                <div class="med-intro scapic">
+                    <div class="pai"><img src="img/mei_i1.jpg" alt=""></div>
+                    <div class="wrap">
+                        <div class="ab-ti">
+                            <h4 class="ch">常规检验</h4>
+                            <h5 class="en">Routine inspection</h5>
+                        </div>
+                        <p class="tx">从各级医疗机构获取的临床检验标本（标本类型包含血液、尿液、痰液、胸腹水、分泌物等）并对其进行检测，包含临床检验五大专业的相关项目。</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="med-list">
+                <li class="btn-more-hover"><div class="pw5">
+                    <div class="t">
+                        <div class="wrap">
+                            <p class="ch">临床血液、体液检验专业</p>
+                            <p class="en">Clinical Blood and Body Fluid Testing Specialty</p>
+                        </div>
+                        <span class="btn btn-more-2 icon iconfont icon-xiangxiajiantou"></span>
+                    </div>
+                    <div class="freeTx">如细菌检测、真菌培养及鉴定、厌氧菌培养及鉴定，霍乱弧菌培养及鉴定，抗生素药敏分析等；</div>
+                </div></li>
+                <li class="btn-more-hover"><div class="pw5">
+                    <div class="t">
+                        <div class="wrap">
+                            <p class="ch">临床化学检验专业</p>
+                            <p class="en">Clinical Chemistry Laboratory Specialty</p>
+                        </div>
+                        <span class="btn btn-more-2 icon iconfont icon-xiangxiajiantou"></span>
+                    </div>
+                    <div class="freeTx">如细菌检测、真菌培养及鉴定、厌氧菌培养及鉴定，霍乱弧菌培养及鉴定，抗生素药敏分析等；</div>
+                </div></li>
+                <li class="btn-more-hover"><div class="pw5">
+                    <div class="t">
+                        <div class="wrap">
+                            <p class="ch">临床免疫、血清学检验专业</p>
+                            <p class="en">Specialty of Clinical Immunology and Serology Testing</p>
+                        </div>
+                        <span class="btn btn-more-2 icon iconfont icon-xiangxiajiantou"></span>
+                    </div>
+                    <div class="freeTx">如细菌检测、真菌培养及鉴定、厌氧菌培养及鉴定，霍乱弧菌培养及鉴定，抗生素药敏分析等；</div>
+                </div></li>
+                <li class="btn-more-hover"><div class="pw5">
+                    <div class="t">
+                        <div class="wrap">
+                            <p class="ch">临床微生物学检验专业</p>
+                            <p class="en">Clinical Microbiology Laboratory</p>
+                        </div>
+                        <span class="btn btn-more-2 icon iconfont icon-xiangxiajiantou"></span>
+                    </div>
+                    <div class="freeTx">如细菌检测、真菌培养及鉴定、厌氧菌培养及鉴定，霍乱弧菌培养及鉴定，抗生素药敏分析等；</div>
+                </div></li>
+                <li class="btn-more-hover"><div class="pw5">
+                    <div class="t">
+                        <div class="wrap">
+                            <p class="ch">临床分子生物学及细胞遗传学检验专业</p>
+                            <p class="en">Clinical Molecular Biology and Cytogenetics Laboratory</p>
+                        </div>
+                        <span class="btn btn-more-2 icon iconfont icon-xiangxiajiantou"></span>
+                    </div>
+                    <div class="freeTx">如细菌检测、真菌培养及鉴定、厌氧菌培养及鉴定，霍乱弧菌培养及鉴定，抗生素药敏分析等；</div>
+                </div></li>
+            </ul>
+        </div>
+        <!-- med1 -->
+    </div>
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    $(function(){
+        $('.med-list .t').bind(_click, function() {
+            if (isMobile) { return; }
+            var $this = $(this).parents('li');
+            var _act = $this.hasClass('act');
+            if (_act) {
+                $this.removeClass('act');
+                $this.find('.freeTx').stop(true,true).slideUp();
+            } else {
+                $('.med-list li').removeClass('act');
+                $this.addClass('act');
+                $('.med-list .freeTx').stop(true,true).slideUp();
+                $this.find('.freeTx').stop(true,true).slideDown();
+            }
+        });
+    })
+</script>
+</body>
+</html>

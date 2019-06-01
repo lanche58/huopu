@@ -1,0 +1,55 @@
+.med-intro{
+    position: relative;
+    padding-right: 100% - 79.9%;
+    .pai{
+        padding-bottom: (485 / 959) * 100%;
+    }
+    .wrap{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -110px;
+        background: $white;
+        width: 575px;
+        height: 220px;
+        padding: 30px 55px 0 35px;
+        box-shadow:0px 3px 20px rgba(0,0,0,0.16);
+        border-bottom: 5px solid $red;
+        overflow: hidden;
+    }
+    .ab-ti .en{
+        margin-top: 1px;
+    }
+    .tx{
+        margin-top: 25px;
+    }
+    @media screen and (max-width:861px) {
+        padding-right: 0;
+        background: $hc3;
+        .wrap{
+            width: 100%;
+            height: auto;
+            background: none;
+            position: static;
+            margin: 0;
+            box-shadow: none;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 40px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ab-ti{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .wrap{
+            padding-top: 5vw;
+            padding-bottom: (40 / 600) * 100vw;
+            border-width: (5 / 600) * 100vw;
+        }
+        .tx{
+            margin-top: (25 / 600) * 100vw;
+        }
+    }
+}

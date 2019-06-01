@@ -1,0 +1,104 @@
+.med-list{
+    .ch{
+        line-height: 1;
+        font-size: 26px;
+        color: $fc1;
+        @include mt3;
+    }
+    .en{
+        margin-top: 6px;
+        color: $fc3;
+    }
+    .t{
+        position: relative;
+        min-height: 50px;
+        cursor: pointer;
+    }
+    .wrap{
+        position: relative;
+        @include di;
+        padding: 16px 0;
+        &:before{
+            @include ba;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background: $bc1;
+            @include mt4;
+        }
+    }
+    .freeTx{
+        padding-top: 20px;
+        display: none;
+    }
+    .btn{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -25px;
+    }
+    li{
+        padding: 30px 0;
+        background: $hc3;
+        &:nth-child(2n) {
+            background: $white;
+        }
+        &.act{
+            .wrap{
+                &:before{
+                    width: 100%;
+                }
+            }
+            .btn{
+                background: $red;
+                transform: rotate(-180deg);
+            }
+            .ch{
+                font-weight: bold;
+                color: $red;
+            }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .ch{
+                    font-weight: bold;
+                    color: $red;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .btn{
+            display: none;
+        }
+        .wrap{
+            padding-top: 0;
+            &:before{
+                width: 100%;
+            }
+        }
+        .ch{
+            line-height: 1.4;
+        }
+        .en{
+            margin-top: 3px;
+        }
+        .freeTx{
+            display: block;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ch{
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ch{
+            font-size: 18px;
+        }
+        .en{
+            font-size: 12px;
+        }
+    }
+}
