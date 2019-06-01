@@ -289,8 +289,8 @@ function setLayer(addr){
             $('.ly-box').remove();
             $('html').removeClass('open');
         }
-    })
-};
+    });
+}
 $(document).on(_click, '.ly-btn', function(e){
     e.preventDefault();
     var url = $(this).attr('href');
@@ -319,3 +319,27 @@ function splitWords(el) {
         }
     }
 };
+
+$(document).on('click','.imgShowBox .btn-close',function() {
+    $('.imgShowBox').removeClass('img-show');
+    setTimeout(function () { jQuery('.imgShowBox').remove(); }, 600);
+}); 
+$(document).on(_click, '.imgShowBox', function(e){
+    if ($(e.target).hasClass('imgShowBox')) {
+        $('.imgShowBox').removeClass('img-show');
+        setTimeout(function () { jQuery('.imgShowBox').remove(); }, 600);
+    }
+});
+function openshowImg(num,maxnum) {
+    jQuery("body").append('<div class="imgShowBox"><div class="imgShowDemo is-arrow u-slick"></div><div class="close-box"><a href="javascript:;" class="btn-close btn"><i class="icon iconfont icon-guanbi"></i><i class="x">关闭</i></a></div></div>');
+    for(var i = 1 ; i <= maxnum ; i++){
+        $('.imgShowDemo').append('<div class="item"><div class="pic"><img src="" alt=""></div><p class="nowti"></p></div>');
+        var imgurl = $("[data-big-num="+i+"]").attr('data-img');
+        var imgtitle = $("[data-big-num="+i+"]").attr('data-title');
+        $('.imgShowDemo .item').eq(i-1).find('.pic img').attr("src",imgurl);
+        $('.imgShowDemo .item').eq(i-1).find('.nowti').html(imgtitle);	
+    }
+    $('.imgShowDemo').slick();
+    $('.imgShowDemo').slick('slickGoTo',num-1);
+    $('.imgShowBox').addClass('img-show');
+} 

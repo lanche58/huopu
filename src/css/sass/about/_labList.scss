@@ -1,0 +1,115 @@
+.lab-list{
+    margin-left: -25px;
+    li{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 25px;
+    }
+    a{
+        display: block;
+        position: relative;
+        margin-left: 25px;
+        color: $white;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .pai{
+                    &:before{
+                        @include hide;
+                    }
+                    &:after{
+                        @include show;
+                    }
+                }
+                .ti2, .btn-big{
+                    transform: none;
+                    @include show;
+                }
+                .ti1{
+                    transform: translateX(20px);
+                    @include hide;
+                }
+            }
+        }
+    }
+    .pai{
+        padding-bottom: (320 / 450) * 100%;
+        &:before, &:after{
+            @include ba;
+            z-index: 1;
+            @include tblr;
+            @include mt4;
+        }
+        &:before{
+            @include b5;
+            background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(0,0,0,0.77) 100%);
+        }
+        &:after{
+            background: $red-5;
+            @include hide;
+        }
+    }
+    .nowti{
+        @include plr;
+        z-index: 9;
+        bottom: 25px;
+        padding: 0 40px;
+        font-size: 20px;
+        @include mt4;
+    }
+    .ti2{
+        text-align: center;
+        font-weight: bold;
+        transform: translateX(-20px);
+        @include hide;
+    }
+    @media screen and (max-width:1600px) {
+        .nowti{
+            padding: 0 30px;
+            bottom: 20px;
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .nowti{
+            padding: 0 20px;
+            bottom: 15px;
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:500px) {
+        li{
+            width: 100%;
+            margin-bottom: (25 / 600) * 100vw;
+        }
+        .nowti{
+            padding: 0 5%;
+        }
+    }
+}
+
+.btn-big{
+    @include plr;
+    z-index: 9;
+    top: 50%;
+    margin-top: -(54px / 2);
+    line-height: 1;
+    text-align: center;
+    transform: translateY(-100%);
+    @include hide;
+    @include mt4;
+    .icon{
+        display: block;
+        margin: 0 auto 10px;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $white;
+        border-radius: 3px;
+        line-height: 30px - 4px;
+        font-size: 18px;
+    }
+}

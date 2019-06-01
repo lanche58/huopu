@@ -1,0 +1,101 @@
+.staff-list{
+    margin-left: -40px;
+    li{
+        width: 50%;
+        float: left;
+        margin-bottom: 40px;
+    }
+    a{
+        display: block;
+        margin-left: 40px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .ti{
+                    color: $red;
+                }
+            }
+        }
+    }
+    .pai{
+        padding-bottom: (350 / 580) * 100%;
+    }
+    .wrap{
+        height: 185px;
+        border: 1px solid $bc1;
+        border-top: none;
+        padding: 25px 40px 0 35px;
+        overflow: hidden;
+    }
+    .ti{
+        height: 30px * 2;
+        font-size: 24px;
+        color: $fc1;
+        line-height: 30px;
+        font-weight: bold;
+        overflow: hidden;
+        @include mt3;
+    }
+    .nw-date2{
+        margin-bottom: 5px;
+    }
+    .more{
+        line-height: 1;
+        margin-top: 30px;
+    }
+    @media screen and (max-width:1366px) {
+        .wrap{
+            padding-right: 35px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        margin-left: -30px;
+        li{
+            margin-bottom: 30px;
+        }
+        a{
+            margin-left: 30px;
+        }
+        .wrap{
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 175px;
+        }
+        .ti{
+            height: 25px * 2;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ti{
+            height: 20px * 2;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .more{
+            margin-top: 20px;
+        }
+        .wrap{
+            padding-top: 20px;
+            height: 145px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        margin-left: -20px;
+        li{
+            margin-bottom: 20px;
+        }
+        a{
+            margin-left: 20px;
+        }
+        .wrap{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+        }
+    }
+}

@@ -28,3 +28,20 @@
     margin: 0 auto;
     max-width: 90%;
 }
+
+.pw4{
+    width: 600px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.pw5{
+    width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width:1366px) {
+        width: 1000px;
+    }
+    @media screen and (max-width:1024px) {
+        width: 90%;
+    }
+}

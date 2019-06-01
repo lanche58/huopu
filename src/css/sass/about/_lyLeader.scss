@@ -1,0 +1,27 @@
+.lea1{
+    padding: (300 / 1600) * 100% 0 120px;
+    .ti{
+        border-bottom: 1px solid $bc1;
+        padding-bottom: 12px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 30px;
+        color: $fc1;
+    }
+    @media screen and (max-width:1024px) {
+        padding-top: 100px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (100 / 600) * 100vw 0 (120 / 600) * 100vw; 
+        .ti{
+            font-size: 24px;
+            margin-bottom: 5vw;
+            padding-bottom: (12 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti{
+            font-size: 22px;
+        }
+    }
+}

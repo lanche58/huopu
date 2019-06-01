@@ -65,3 +65,37 @@
         }
     }
 }
+
+.ab4{
+    padding-top: 80px;
+    .lab-list{
+        margin-bottom: 55px;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (80 / 600) * 100vw;
+        .lab-list{
+            margin-bottom: (55 / 600) * 100vw;
+        }
+    }
+}
+
+.ab5{
+    padding-top: 70px;
+    .staff-list{
+        margin-bottom: 40px;
+    }
+    .select-date{
+        margin-bottom: 25px;
+    }
+    @media screen and (max-width:1024px) {
+        .staff-list{
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (70 / 600) * 100vw;
+        .staff-list{
+            margin-bottom: 10vw;
+        }
+    }
+}
