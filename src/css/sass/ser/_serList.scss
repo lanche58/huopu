@@ -1,0 +1,119 @@
+.ser-list{
+    a{
+        display: block;
+        background: $hc3;
+    }
+    .picbox{
+        width: 50%;
+        float: left;
+    }
+    .pai{
+        padding-bottom: (439 / 960) * 100%;
+    }
+    .wrap{
+        overflow: hidden;
+        padding: (90 / 1920) * 100% (160 / 1920) * 100% 0 (80 / 1920) * 100%;
+    }
+    .ch{
+        font-weight: bold;
+        font-size: 20px;
+        color: $fc1;
+    }
+    .en{
+        margin-top: 3px;
+        color: $fc3;
+    }
+    .tx{
+        margin-top: 20px;
+        height: 24px * 3;
+    }
+    .btn-sub{
+        margin-top: 55px;
+        width: 160px;
+        padding: 0 20px;
+    }
+    @media screen and (max-width:1600px) {
+        .wrap{
+            padding-right: (80 / 1920) * 100%;
+            padding-top: (70 / 1920) * 100%;
+        }
+    }
+    @media screen and (max-width:1440px) {
+        .btn-sub{
+            margin-top: 40px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .tx{
+            height: 24px * 2;
+        }
+    }
+    @media screen and (max-width:1201px) {
+        .wrap{
+            padding-top: (60 / 1920) * 100%;
+        }
+        .btn-sub{
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .picbox{
+            width: 420px;
+        }
+        .pai{
+            padding-bottom: 0;
+            height: 312px;
+            img{
+                @include ofc;
+            }
+        }
+        .wrap{
+            padding: 60px 50px 0;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .picbox{
+            width: 380px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        .picbox{
+            width: 100%;
+            float: none;
+        }
+        .pai{
+            height: auto;
+            padding-bottom: (439 / 960) * 100%;
+        }
+        .wrap{
+            padding: 40px 5% 50px;
+        }
+        .tx{
+            height: auto;
+        }
+        .btn-sub{
+            margin-top: 40px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .wrap{
+            padding-top: (40 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .btn-sub{
+            margin-top: 30px;
+            height: 40px;
+            width: 120px;
+            padding: 0 15px;
+            line-height: 40px;
+            font-size: 12px;
+            .icon{
+                font-size: 12px;
+            }
+        }
+        .wrap{
+            padding-bottom: 40px;
+        }
+    }
+}

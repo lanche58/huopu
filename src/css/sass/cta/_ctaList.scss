@@ -1,0 +1,109 @@
+.cta-list{
+    li{
+        float: left;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .icon{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    .icon{
+        float: left;
+        @include c(90px);
+        background: $mc2;
+        margin-right: 30px;
+        line-height: 90px;
+        text-align: center;
+        color: $white;
+        font-size: 40px;
+        @include mt4;
+    }
+    .wrap{
+        padding-top: 21px;
+        overflow: hidden;
+    }
+    .name{
+        color: $fc3;
+    }
+    .text{
+        line-height: 1.4;
+        font-size: 20px;
+        font-weight: bold;
+        color: $fc1;
+        a{
+            color: $fc1;
+        }
+    }
+    .item1{
+        width: 40%;
+        clear: both;
+    }
+    .item2{
+        position: relative;
+        width: 60%;
+        padding-left: 80px;
+        .icon{
+            background: $mc3;
+        }
+        &:before{
+            @include ba;
+            top: 10px;
+            left: 0;
+            width: 1px;
+            height: 70px;
+            background: $bc1;
+        }
+    }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{
+                color: $red;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            float: none;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            + li{
+                margin-top: 30px;
+            }
+        }
+        .item2, .item1{
+            width: 100%;
+        }
+        .item2{
+            padding-left: 0;
+            &:before{
+                display: none;
+            }
+        }
+        .wrap{
+            padding-top: 0;
+        }
+        .text{
+            flex: 1;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li + li{
+            margin-top: 5vw;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .icon{
+            width: 70px;
+            height: 70px;
+            margin-right: 15px;
+            line-height: 70px;
+            font-size: 32px;
+        }
+        .text{
+            font-size: 18px;
+        }
+    }
+}

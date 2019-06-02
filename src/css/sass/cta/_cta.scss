@@ -1,0 +1,63 @@
+.cta2{
+    padding: 80px 0 100px;
+    .ab-ti{
+        margin-bottom: 50px;
+    }
+    @media screen and (max-width:1024px) {
+        padding-bottom: 100px - 30px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0 (70 / 600) * 100vw;
+        .ab-ti{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+}
+
+.cta1{
+    padding: 80px 0 100px;
+    .ab-ti{
+        margin-bottom: 35px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0 (100 / 600) * 100vw;
+        .ab-ti{
+            margin-bottom: (35 / 600) * 100vw;
+        }
+    }
+}
+
+.cta3{
+    padding-top: 80px;
+    .ab-ti{
+        margin-bottom: 50px;
+    }
+    .job-list{
+        margin-bottom: 80px - 30px;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (80 / 600) * 100vw;
+        .ab-ti{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+        .job-list{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+}
+
+.cta4{
+    padding: 120px 0;
+    @media screen and (max-width:861px) {
+        padding: 80px 0;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0;
+    }
+}
+
+#map{
+    @media screen and (max-width:1024px) {
+        height: 200px !important;
+    }
+}

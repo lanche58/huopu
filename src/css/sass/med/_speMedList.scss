@@ -1,0 +1,129 @@
+.spe-med-list{
+    li{
+        width: 50%;
+        float: left;
+        border-top: 1px solid $bc1;
+        padding: 60px 0;
+        position: relative;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .pic{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    .pic{
+        float: left;
+        width: 93px;
+        margin-right: 30px;
+        @include mt4;
+    }
+    .ch{
+        font-size: 26px;
+        color: $fc1;
+    }
+    .freeTx, .en{
+        color: $fc3;
+    }
+    .ti{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .en{
+        margin-top: 6px;
+    }
+    .freeTx{
+        margin-top: 5px;
+        line-height: 1.6;
+    }
+    .wrap{
+        overflow: hidden;
+    }
+    .item1{
+        clear: both;
+        padding-right: 100px;
+        .line{
+            right: -1px;
+        }
+    }
+    .line{
+        position: absolute;
+        top: 60px;
+        bottom: 60px;
+        width: 1px;
+        background: $bc1;
+    }
+    .item2{
+        padding-left: 100px;
+        .line{
+            left: 0;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .item1{
+            padding-right: 60px;
+        }
+        .item2{
+            padding-left: 60px;
+        }
+        .ch{
+            font-size: 22px;
+        }
+        .en{
+            font-size: 12px;
+            margin-top: 1px;
+        }
+        .ti{
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .item1{
+            padding-right: 40px;
+        }
+        .item2{
+            padding-left: 40px;
+        }
+        .pic{
+            width: 73px;
+            margin-right: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .item1{
+            padding-right: 0;
+        }
+        .item2{
+            padding-left: 0;
+        }
+        li{
+            width: 100%;
+            float: none;
+        }
+        .pic{
+            width: 93px;
+            margin-right: 30px;
+        }
+        .line{
+            display: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            padding: 10vw 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .pic{
+            width: 73px;
+            margin-right: 20px;
+        }
+        .ch{
+            font-size: 18px;
+        }
+        .ti{
+            font-size: 15px;
+        }
+    }
+}

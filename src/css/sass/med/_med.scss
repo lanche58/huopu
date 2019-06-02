@@ -10,3 +10,10 @@
         }
     }
 }
+
+.med3{
+    padding-top: 80px;
+    @media screen and (max-width:601px) {
+        padding-top: (80 / 600) * 100vw;
+    }
+}

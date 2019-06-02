@@ -1,0 +1,158 @@
+.job-list{
+    margin-left: -20px;
+    li{
+        width: 50%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    a{
+        display: block;
+        position: relative;
+        margin-left: 20px;
+        height: 200px;
+        border: 1px solid $bc1;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .btn{
+                    transform: translateX(10px);
+                }
+            }
+        }
+    }
+    .t{
+        border-bottom: 1px solid $bc1;
+        .nowti{
+            float: left;
+            padding-top: 34px;
+            padding-bottom: 34px;
+        }
+    }
+    .nowti{
+        line-height: 24px;
+        + .nowti{
+            border-left: 1px solid $bc1;
+        }
+    }
+    .name{
+        width: 44%;
+        padding-left: 25px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .money, .date{
+        color: $fc3;
+        text-align: center;
+    }
+    .money i, .date{
+        font-style: italic;
+    }
+    .money{
+        width: 33.9%;
+    }
+    .date{
+        width: 100% - 44% - 33.9%;
+    }
+    .tx{
+        line-height: 20px !important;
+        height: 20px * 2;
+        box-sizing: content-box;
+        padding: 30px 135px 0 25px;
+    }
+    .btn{
+        position: absolute;
+        right: 25px;
+        top: 93px + 30px;
+    }
+    @media screen and (max-width:1366px) {
+        .tx{
+            padding-right: 25px + 40px + 25px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .t{
+            font-size: 12px;
+            .nowti{
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+        }
+        .name{
+            font-size: 18px;
+        }
+        a{
+            height: 180px;
+        }
+        .btn{
+            top: 103px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .money, .date{
+            width: 50%;
+            text-align: left;
+            padding-left: 25px;
+        }
+        .money{
+            border-left: none;
+        }
+        .t{
+            .nowti{
+                padding-top: 9px;
+                padding-bottom: 9px;
+            }
+            .name{
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
+        .name{
+            width: 100%;
+            border-bottom: 1px solid $bc1;
+        }
+        a{
+            height: 190px;
+        }
+        .tx{
+            padding-top: 25px;
+            padding-right: 25px;
+        }
+        .btn{
+            width: 32px;
+            height: 32px;
+            top: 10px;
+            line-height: 32px;
+            font-size: 8px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        li{
+            width: 100%;
+            float: none;
+        }
+        .tx{
+            padding-top: 15px;
+            height: auto;
+        }
+        a{
+            height: auto;
+            padding-bottom: 30px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            margin-bottom: 5vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .nowti{
+            padding-left: 15px;
+        }
+        .btn{
+            right: 15px;
+        }
+        .tx{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}

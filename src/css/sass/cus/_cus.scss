@@ -1,0 +1,153 @@
+.cus-box{
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width:1024px) {
+        padding: 120px 0;
+    }
+    @media screen and (max-width:601px) {
+        padding: (120 / 600) * 100% 0;
+    }
+}
+
+.cus-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -245px 0 0 -200px;
+    width: 400px;
+    height: 490px;
+    box-shadow:0px 3px 20px rgba(0,0,0,0.11);
+    border-radius: 4px;
+    background: $white;
+    background: $white-9;
+    padding: 60px 50px 0;
+    .ab-ti{
+        margin-bottom: 40px;
+        .en{
+            font-size: 12px;
+            margin-top: 1px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        height: 400px;
+        margin-top: -200px;
+        padding-top: 45px;
+        .ab-ti{
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        margin: 0 auto;
+        max-width: 90%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width:441px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.inp-box{
+    position: relative;
+    .inp{
+        width: 100%;
+        padding-left: 25px;
+    }
+    .icon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 36px;
+        font-size: 15px;
+        color: $fc3;
+    }
+    .btn-yz{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 3px;
+        width: 130px;
+        height: 30px;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    + .inp-box{
+        margin-top: 18px;
+    }
+}
+
+.sub-box{
+    margin-top: 68px;
+    .btn-sub{
+        max-width: 100%;
+    }
+    @media screen and (max-width:1366px) {
+        margin-top: 45px;
+    }
+}
+
+.mess-form{
+    width: 500px;
+    height: 480px;
+    margin: -240px 0 0 -250px;
+    padding: 40px 40px 0;
+    .clearfix{
+        margin-left: -25px;
+        .inp-wrap{
+            width: 50%;
+            float: left;
+            padding-left: 25px;
+        }
+    }
+    .ab-ti{
+        margin-bottom: 35px;
+    }
+    @media screen and (max-width:1366px) {
+        height: 470px;
+        margin-top: -235px;
+        .ab-ti{
+            margin-bottom: 25px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 45px;
+    }
+    @media screen and (max-width:481px) {
+        padding-left: 25px;
+        padding-right: 25px;
+        .clearfix{
+            .inp-wrap{
+                width: 100%;
+            }
+        }
+        .ab-ti{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.inp-wrap{
+    margin-top: 10px;
+    .inp{
+        display: block;
+        width: 100%;
+    }
+    .s-textarea{
+        height: 128px;
+        resize: none;
+    }
+}
+
+.sub-wrap{
+    margin-top: 30px;
+}

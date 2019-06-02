@@ -1,0 +1,73 @@
+.ser-intro{
+    position: relative;
+    z-index: 9;
+    background: $white;
+    padding: 60px 70px 90px;
+    box-shadow:0px 3px 20px rgba(0,0,0,0.16);
+    @media screen and (max-width:861px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: 10vw;
+        padding-bottom: (90 / 600) * 100vw;
+    }
+}
+
+.ser-wrap{
+    position: relative;
+    &:before, &:after{
+        @include ba;
+        left: 0;
+        right: 0;
+        background: $white;
+        height: 120px;
+        @media screen and (max-width:601px) {
+            height: (120 / 600) * 100vw;
+        }
+    }
+    &:before{
+        top: 0;
+    }
+    &:after{
+        bottom: 0;
+    }
+}
+
+.ser-page{
+    .page-pa, .pbanner{
+        background: $white;
+    }
+    .page-pa{
+        padding-bottom: 80px;
+        @media screen and (max-width:601px) {
+            padding-bottom: (80 / 600) * 100vw;
+        }
+    }
+}
+
+.ser-bg{
+    background: $white;
+}
+
+.med2{
+    .t{
+        padding-bottom: 60px;
+        @media screen and (max-width:601px) {
+            padding-bottom: 10vw;
+        }
+    }
+}
+
+.med3{
+    padding-top: 100px;
+    .ser-list{
+        margin-top: 50px;
+    }
+    @media screen and (max-width:601px) {
+        padding-top: (100 / 600) * 100vw;
+        .ser-list{
+            margin-top: (50 / 600) * 100vw;
+        }
+    }
+}

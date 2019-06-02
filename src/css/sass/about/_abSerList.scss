@@ -45,14 +45,31 @@
                 background: $mc5;
             }
         }
+        &:nth-child(5){
+            .icon1{
+                background: $mc6;
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        li{
+            margin: 0 50px;
+        }
     }
     @media screen and (max-width:1024px) {
+        text-align: left;
         li{
-            width: 25%;
-            margin: 0;
+            width: 20%;
+            margin: 0 0 30px;
+            text-align: center;
         }
         .icon1{
             margin: 0 auto;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 25%;
         }
     }
     @media screen and (max-width:641px) {

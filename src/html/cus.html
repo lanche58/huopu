@@ -1,0 +1,41 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "cus": "act"
+})
+<div class="cus-box scroll-animation">
+    <div class="psfixbg" style="background-image: url(img/cust_bg1.jpg);"></div>
+    <div class="cus-form trans transX"> 
+        <div class="ab-ti tac">
+            <h4 class="ch">报告查询</h4>
+            <h5 class="en">Report query</h5>
+        </div>
+        <form>
+            <div class="inp-box"><i class="icon iconfont icon-zhanghao"></i><input type="text" value="姓名:" class="inp s-input"/></div>
+            <div class="inp-box"><i class="icon iconfont icon-mima"></i><input type="text" value="密码:" class="inp s-input"/></div>
+            <div class="inp-box"><i class="icon iconfont icon-yanzhengma"></i><input type="text" value="验证码:" class="inp s-input"/><a href="#" class="btn-yz"><img src="img/yz.jpg" alt=""></a></div>
+            <div class="sub-box tac"><button type="submit" class="btn-sub">立即登陆<i class="icon iconfont icon-z043"></i></button></div>
+        </form>
+    </div>
+</div>
+<!-- cus-box -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    function cusBox() {
+        if(!isMobile){
+            $('.cus-box').css({ height: w_height - $mtoph });
+            
+        }else{
+            $('.cus-box').css({ height: 'auto' });
+        }
+    }
+    cusBox();
+    $(window).resize(function() {
+        cusBox();
+    });
+</script>
+</body>
+</html>

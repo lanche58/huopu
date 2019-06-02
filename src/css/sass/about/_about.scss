@@ -9,6 +9,11 @@
     .freeTx2{
         margin-top: 75px;
     }
+    @media screen and (max-width:1024px) {
+        .freeTx2{
+            margin-top: 75px - 30px;
+        }
+    }
     @media screen and (max-width:601px) {
         padding-top: (70 / 600) * 100vw;
         .ab-ti{
@@ -17,11 +22,6 @@
         .ab-ser-list{
             margin-top: (55 / 600) * 100vw;
         }
-        .freeTx2{
-            margin-top: (75 / 600) * 100vw;
-        }
-    }
-    @media screen and (max-width:481px) {
         .freeTx2{
             margin-top: (45 / 600) * 100vw;
         }

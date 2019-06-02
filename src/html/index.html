@@ -122,10 +122,10 @@
                     <p class="ti">实验室展示</p>
                 </a></div>
                 <div class="il-list u-slick">
-                    <div class="item"><a href="#" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
-                    <div class="item"><a href="#" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
-                    <div class="item"><a href="#" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
-                    <div class="item"><a href="#" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
+                    <div class="item"><a href="javascript:void(0);" data-big-num="1" data-img="img/lab_i13.jpg" data-title="fish荧光显微镜" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
+                    <div class="item"><a href="javascript:void(0);" data-big-num="2" data-img="img/lab_i13.jpg" data-title="fish荧光显微镜" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
+                    <div class="item"><a href="javascript:void(0);" data-big-num="3" data-img="img/lab_i13.jpg" data-title="fish荧光显微镜" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
+                    <div class="item"><a href="javascript:void(0);" data-big-num="4" data-img="img/lab_i13.jpg" data-title="fish荧光显微镜" class="pai"><img src="img/ix_i2.jpg" alt=""></a></div>
                 </div>
             </div>
         </div>
@@ -183,6 +183,12 @@
         $('.il-list').slick({
             arrows: false,
             dots: true,
+        });
+        var maxnum = $('.il-list .item').length;
+        $('.il-list .pai').bind('click', function () {
+            var $this = $(this);
+            var num = parseInt($this.attr('data-big-num'));
+            openshowImg(num,maxnum); 
         });
     })
 </script>
