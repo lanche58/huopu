@@ -965,6 +965,7 @@ a.pswp__share--download:hover{background:#ddd}
 .banner .slick-arrow{display:none!important}
 .banner .slick-dots{display:block!important}
 .banner .txts{top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.banner .pic{position:relative}
 }
 @media screen and (max-width:641px){
 .banner .ch{font-size:28px}
