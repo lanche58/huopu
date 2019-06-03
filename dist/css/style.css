@@ -782,7 +782,7 @@ a.pswp__share--download:hover{background:#ddd}
 .btn-sub:hover{background:#f22229}
 .btn-sub:hover .icon{-webkit-transform:translateX(10px);-moz-transform:translateX(10px);-ms-transform:translateX(10px);transform:translateX(10px)}
 }
-.inp{line-height:24px;padding:5px 0;border-bottom:1px solid #ccc;border-top:1px solid #fff;height:36px;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
+.inp{line-height:24px;padding:5px 0;border-bottom:1px solid #ccc;border-top:1px solid transparent;height:36px;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
 .inp:focus{border-bottom-color:#e62129}
 .select-date{position:relative;width:140px;max-width:100%}
 .select-date select{width:100%;height:35px;border-bottom:1px solid #ebebeb;border-top:1px solid #fff;color:#999}
